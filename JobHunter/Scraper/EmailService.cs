@@ -22,7 +22,7 @@ namespace JobHunter.Services
 
                 // 1. Gönderen (Senin Adın) ve Alıcı Bilgileri
                 message.From.Add(new MailboxAddress(fullName, senderEmail));
-                message.To.Add(new MailboxAddress("İşe Alım Sorumlusu", job.Email));
+                message.To.Add(new MailboxAddress("İşe Alım Sorumlusu ", job.Email));
 
                 // 2. Konu Başlığı
                 message.Subject = $"{job.Title} Pozisyonu Hakkında İş Başvurusu - {fullName}";
