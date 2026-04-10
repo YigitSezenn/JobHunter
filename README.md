@@ -1,20 +1,22 @@
-📧 E-posta Servis Yapılandırması (SMTP)
-Sistemin e-posta gönderebilmesi için bir Uygulama Şifresi (App Password) oluşturmanız gerekmektedir. Normal hesap şifreniz güvenlik nedeniyle bu tür uygulamalarda doğrudan kullanılmamalıdır.
+🔐 E-posta Gönderimi İçin Uygulama Şifresi Kurulumu
+Uygulama üzerinden e-posta gönderimi yapabilmek için standart hesap şifreniz yerine bir Uygulama Şifresi kullanmanız gerekmektedir. Lütfen kullandığınız servise göre aşağıdaki adımları takip edin:
 
-🔵 Outlook Kullanıyorsanız
-Microsoft hesabınızda Gelişmiş Güvenlik Seçenekleri kısmına gidin.
+Outlook Ayarları
+Microsoft hesabınızda Gelişmiş Güvenlik Seçenekleri bölümüne gidin.
 
-"Uygulama şifreleri" başlığı altından "Yeni bir uygulama şifresi oluştur" seçeneğine tıklayın.
+"Uygulama şifreleri" başlığını bulun ve "Yeni bir uygulama şifresi oluştur" linkine tıklayın.
 
-Verilen 16 haneli kodu kopyalayıp projenizdeki .env dosyasında ilgili alana yapıştırın.
+Ekranda görünen kodu kopyalayın.
 
-🔴 Gmail Kullanıyorsanız
-Google hesabınızda 2 Adımlı Doğrulama'nın açık olduğundan emin olun.
+Uygulama arayüzündeki şifre alanına bu kodu yapıştırın.
+
+Gmail Ayarları
+Google hesabınızda 2 Adımlı Doğrulama'nın aktif olduğundan emin olun.
 
 Google Uygulama Şifreleri sayfasına gidin.
 
-Uygulama adı olarak projenizin ismini belirleyin ve şifreyi oluşturun.
+Uygulama için bir isim (örneğin: "Portfolyo") belirleyip şifreyi oluşturun.
 
-Ekrandaki kodu kopyalayıp .env dosyanıza ekleyin.
+Verilen 16 haneli özel kodu kopyalayın ve uygulamadaki şifre kısmına yapıştırın.
 
-Not: Oluşturduğunuz şifreyi .env dosyasına yazarken boşluk bırakmadan yapıştırdığınızdan emin olun.
+İpucu: Kodu yapıştırırken başında veya sonunda boşluk kalmadığından emin olun, aksi takdirde bağlantı hatası alabilirsiniz.
